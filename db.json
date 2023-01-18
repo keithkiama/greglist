@@ -41,8 +41,36 @@
       "description": "Treadmill Parts For Free",
       "image": "./images/treadmill.jpg",
       "location": "East Flatbush"
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "Nairobi",
+      "image": "we don't want image",
+      "id": 8
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 9
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 10
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 11
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 12
     }
   ]
 }
- 
-

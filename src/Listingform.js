@@ -26,11 +26,22 @@ function Listingform({onAdd}) {
 
     function handleSubmit(e){
         e.preventDefault()
-        onAdd(userData)
+        // post received data
+        fetch("http://localhost:3000/listings",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        }).then((res)=>res.json())
+        .then((dataInJson)=>{
+            onAdd(dataInJson)
+        })
     }
 
-
     return (
+        <>
+        <h1 style={{margin: 10}}>Add Listing form</h1>        
         <form onSubmit={handleSubmit}>
             <label>
                 Description:
@@ -46,7 +57,9 @@ function Listingform({onAdd}) {
             </label>
             <input type="submit" value="Submit" />
         </form>
+        </>
     )
+
 }
 
 export default Listingform
