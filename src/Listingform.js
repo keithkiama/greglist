@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 // add events & event handlers, to capture user inputs
@@ -14,6 +16,7 @@ import React, { useState } from "react";
 
 function Listingform({onAdd}) {
     const[userData, setUserData] = useState({})
+    let navigator = useNavigate();
 
 
     function handleInput(e){
@@ -36,6 +39,7 @@ function Listingform({onAdd}) {
         }).then((res)=>res.json())
         .then((dataInJson)=>{
             onAdd(dataInJson)
+            navigator("/showlistings")
         })
     }
 

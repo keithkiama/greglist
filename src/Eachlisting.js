@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Eachlisting({description, image, location, id}){
     return(
@@ -6,6 +7,8 @@ function Eachlisting({description, image, location, id}){
             <img src={image}></img>
             <h1>{description}</h1>
             <p>{location}</p>
+            {/* <button>View Details</button> */}
+            <Link to={`detail/${id}`}>View Details</Link>
         </div>
     )
 }
