@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 // add events & event handlers, to capture user inputs
@@ -14,6 +16,7 @@ import React, { useState } from "react";
 
 function Listingform({onAdd}) {
     const[userData, setUserData] = useState({})
+    let navigator = useNavigate();
 
 
     function handleInput(e){
@@ -26,11 +29,23 @@ function Listingform({onAdd}) {
 
     function handleSubmit(e){
         e.preventDefault()
-        onAdd(userData)
+        // post received data
+        fetch("http://localhost:3000/listings",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        }).then((res)=>res.json())
+        .then((dataInJson)=>{
+            onAdd(dataInJson)
+            navigator("/showlistings")
+        })
     }
 
-
     return (
+        <>
+        <h1 style={{margin: 10}}>Add Listing form</h1>        
         <form onSubmit={handleSubmit}>
             <label>
                 Description:
@@ -46,7 +61,9 @@ function Listingform({onAdd}) {
             </label>
             <input type="submit" value="Submit" />
         </form>
+        </>
     )
+
 }
 
 export default Listingform

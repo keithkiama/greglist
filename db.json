@@ -41,8 +41,60 @@
       "description": "Treadmill Parts For Free",
       "image": "./images/treadmill.jpg",
       "location": "East Flatbush"
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "Nairobi",
+      "image": "we don't want image",
+      "id": 8
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 9
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 10
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 11
+    },
+    {
+      "description": "A nice heater for the cold weather",
+      "location": "kenya",
+      "image": "we don't want image",
+      "id": 12
+    },
+    {
+      "description": "Muziki bila jasho",
+      "location": "Kinoo Kwetu",
+      "image": "we don't want image",
+      "id": 13
+    },
+    {
+      "description": "Muziki bila jasho",
+      "location": "Kinoo Kwetu",
+      "image": "new image new Image 2",
+      "id": 14
+    },
+    {
+      "description": "Very very very Beautiful couch",
+      "location": "Nairobi",
+      "image": "images/dvd-cases.jpg",
+      "id": 15
+    },
+    {
+      "description": "TEsting for Deployment",
+      "location": "Deployment",
+      "image": "./images/toothbrush-charger.jpg",
+      "id": 16
     }
   ]
 }
- 
-
